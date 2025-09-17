@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Tick & Style</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .navbar { background: #333; padding: 10px; }
+        .navbar a { color: white; margin: 10px; text-decoration: none; }
+        .navbar a:hover { text-decoration: underline; }
+        .contact-box { border: 1px solid #333; padding: 20px; margin: 20px; }
+        input, textarea { width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 10px; }
+        button { padding: 8px 12px; cursor: pointer; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <a href="BSCS25056_Home.html">HOME</a>
+        <a href="BSCS25056_Products.html">PRODUCTS</a>
+        <a href="BSCS25056_Contact.html">Contact US</a>
+        <a href="BSCS25056_Chat.html">CHAT BOX</a>
+    </div>
+
+    <h1>Contact Us</h1>
+    <div class="contact-box">
+        <form onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Location: Lahore, Pakistan</p>
+    </div>
+
+    <script src="BSCS25056_script.js"></script>
+</body>
+</html>
